@@ -1,0 +1,514 @@
+[
+  {
+    "name": "Gossiping",
+    "url": "https://www.ptt.cc/bbs/Gossiping/index.html"
+  },
+  {
+    "name": "C_Chat",
+    "url": "https://www.ptt.cc/bbs/C_Chat/index.html"
+  },
+  {
+    "name": "Stock",
+    "url": "https://www.ptt.cc/bbs/Stock/index.html"
+  },
+  {
+    "name": "Baseball",
+    "url": "https://www.ptt.cc/bbs/Baseball/index.html"
+  },
+  {
+    "name": "NBA",
+    "url": "https://www.ptt.cc/bbs/NBA/index.html"
+  },
+  {
+    "name": "Lifeismoney",
+    "url": "https://www.ptt.cc/bbs/Lifeismoney/index.html"
+  },
+  {
+    "name": "LoL",
+    "url": "https://www.ptt.cc/bbs/LoL/index.html"
+  },
+  {
+    "name": "HatePolitics",
+    "url": "https://www.ptt.cc/bbs/HatePolitics/index.html"
+  },
+  {
+    "name": "KoreaStar",
+    "url": "https://www.ptt.cc/bbs/KoreaStar/index.html"
+  },
+  {
+    "name": "car",
+    "url": "https://www.ptt.cc/bbs/car/index.html"
+  },
+  {
+    "name": "home-sale",
+    "url": "https://www.ptt.cc/bbs/home-sale/index.html"
+  },
+  {
+    "name": "PC_Shopping",
+    "url": "https://www.ptt.cc/bbs/PC_Shopping/index.html"
+  },
+  {
+    "name": "MobileComm",
+    "url": "https://www.ptt.cc/bbs/MobileComm/index.html"
+  },
+  {
+    "name": "Beauty",
+    "url": "https://www.ptt.cc/bbs/Beauty/index.html"
+  },
+  {
+    "name": "basketballTW",
+    "url": "https://www.ptt.cc/bbs/basketballTW/index.html"
+  },
+  {
+    "name": "movie",
+    "url": "https://www.ptt.cc/bbs/movie/index.html"
+  },
+  {
+    "name": "Marginalman",
+    "url": "https://www.ptt.cc/bbs/Marginalman/index.html"
+  },
+  {
+    "name": "Japan_Travel",
+    "url": "https://www.ptt.cc/bbs/Japan_Travel/index.html"
+  },
+  {
+    "name": "SportLottery",
+    "url": "https://www.ptt.cc/bbs/SportLottery/index.html"
+  },
+  {
+    "name": "sex",
+    "url": "https://www.ptt.cc/bbs/sex/index.html"
+  },
+  {
+    "name": "japanavgirls",
+    "url": "https://www.ptt.cc/bbs/japanavgirls/index.html"
+  },
+  {
+    "name": "Military",
+    "url": "https://www.ptt.cc/bbs/Military/index.html"
+  },
+  {
+    "name": "Tech_Job",
+    "url": "https://www.ptt.cc/bbs/Tech_Job/index.html"
+  },
+  {
+    "name": "Steam",
+    "url": "https://www.ptt.cc/bbs/Steam/index.html"
+  },
+  {
+    "name": "MobilePay",
+    "url": "https://www.ptt.cc/bbs/MobilePay/index.html"
+  },
+  {
+    "name": "HardwareSale",
+    "url": "https://www.ptt.cc/bbs/HardwareSale/index.html"
+  },
+  {
+    "name": "Kaohsiung",
+    "url": "https://www.ptt.cc/bbs/Kaohsiung/index.html"
+  },
+  {
+    "name": "iOS",
+    "url": "https://www.ptt.cc/bbs/iOS/index.html"
+  },
+  {
+    "name": "KoreaDrama",
+    "url": "https://www.ptt.cc/bbs/KoreaDrama/index.html"
+  },
+  {
+    "name": "creditcard",
+    "url": "https://www.ptt.cc/bbs/creditcard/index.html"
+  },
+  {
+    "name": "TaichungBun",
+    "url": "https://www.ptt.cc/bbs/TaichungBun/index.html"
+  },
+  {
+    "name": "FORMULA1",
+    "url": "https://www.ptt.cc/bbs/FORMULA1/index.html"
+  },
+  {
+    "name": "Tainan",
+    "url": "https://www.ptt.cc/bbs/Tainan/index.html"
+  },
+  {
+    "name": "NSwitch",
+    "url": "https://www.ptt.cc/bbs/NSwitch/index.html"
+  },
+  {
+    "name": "Lions",
+    "url": "https://www.ptt.cc/bbs/Lions/index.html"
+  },
+  {
+    "name": "CVS",
+    "url": "https://www.ptt.cc/bbs/CVS/index.html"
+  },
+  {
+    "name": "PlayStation",
+    "url": "https://www.ptt.cc/bbs/PlayStation/index.html"
+  },
+  {
+    "name": "MacShop",
+    "url": "https://www.ptt.cc/bbs/MacShop/index.html"
+  },
+  {
+    "name": "miHoYo",
+    "url": "https://www.ptt.cc/bbs/miHoYo/index.html"
+  },
+  {
+    "name": "Japandrama",
+    "url": "https://www.ptt.cc/bbs/Japandrama/index.html"
+  },
+  {
+    "name": "China-Drama",
+    "url": "https://www.ptt.cc/bbs/China-Drama/index.html"
+  },
+  {
+    "name": "mobilesales",
+    "url": "https://www.ptt.cc/bbs/mobilesales/index.html"
+  },
+  {
+    "name": "biker",
+    "url": "https://www.ptt.cc/bbs/biker/index.html"
+  },
+  {
+    "name": "Gamesale",
+    "url": "https://www.ptt.cc/bbs/Gamesale/index.html"
+  },
+  {
+    "name": "Aviation",
+    "url": "https://www.ptt.cc/bbs/Aviation/index.html"
+  },
+  {
+    "name": "ONE_PIECE",
+    "url": "https://www.ptt.cc/bbs/ONE_PIECE/index.html"
+  },
+  {
+    "name": "CFantasy",
+    "url": "https://www.ptt.cc/bbs/CFantasy/index.html"
+  },
+  {
+    "name": "Drama-Ticket",
+    "url": "https://www.ptt.cc/bbs/Drama-Ticket/index.html"
+  },
+  {
+    "name": "AC_In",
+    "url": "https://www.ptt.cc/bbs/AC_In/index.html"
+  },
+  {
+    "name": "TWICE",
+    "url": "https://www.ptt.cc/bbs/TWICE/index.html"
+  },
+  {
+    "name": "e-coupon",
+    "url": "https://www.ptt.cc/bbs/e-coupon/index.html"
+  },
+  {
+    "name": "watch",
+    "url": "https://www.ptt.cc/bbs/watch/index.html"
+  },
+  {
+    "name": "EAseries",
+    "url": "https://www.ptt.cc/bbs/EAseries/index.html"
+  },
+  {
+    "name": "Elephants",
+    "url": "https://www.ptt.cc/bbs/Elephants/index.html"
+  },
+  {
+    "name": "CheerGirlsTW",
+    "url": "https://www.ptt.cc/bbs/CheerGirlsTW/index.html"
+  },
+  {
+    "name": "KR_Entertain",
+    "url": "https://www.ptt.cc/bbs/KR_Entertain/index.html"
+  },
+  {
+    "name": "CarShop",
+    "url": "https://www.ptt.cc/bbs/CarShop/index.html"
+  },
+  {
+    "name": "DC_SALE",
+    "url": "https://www.ptt.cc/bbs/DC_SALE/index.html"
+  },
+  {
+    "name": "BabyMother",
+    "url": "https://www.ptt.cc/bbs/BabyMother/index.html"
+  },
+  {
+    "name": "Monkeys",
+    "url": "https://www.ptt.cc/bbs/Monkeys/index.html"
+  },
+  {
+    "name": "WomenTalk",
+    "url": "https://www.ptt.cc/bbs/WomenTalk/index.html"
+  },
+  {
+    "name": "Headphone",
+    "url": "https://www.ptt.cc/bbs/Headphone/index.html"
+  },
+  {
+    "name": "Lakers",
+    "url": "https://www.ptt.cc/bbs/Lakers/index.html"
+  },
+  {
+    "name": "Bank_Service",
+    "url": "https://www.ptt.cc/bbs/Bank_Service/index.html"
+  },
+  {
+    "name": "DSLR",
+    "url": "https://www.ptt.cc/bbs/DSLR/index.html"
+  },
+  {
+    "name": "MuscleBeach",
+    "url": "https://www.ptt.cc/bbs/MuscleBeach/index.html"
+  },
+  {
+    "name": "PublicServan",
+    "url": "https://www.ptt.cc/bbs/PublicServan/index.html"
+  },
+  {
+    "name": "WOW",
+    "url": "https://www.ptt.cc/bbs/WOW/index.html"
+  },
+  {
+    "name": "DIABLO",
+    "url": "https://www.ptt.cc/bbs/DIABLO/index.html"
+  },
+  {
+    "name": "AllTogether",
+    "url": "https://www.ptt.cc/bbs/AllTogether/index.html"
+  },
+  {
+    "name": "marriage",
+    "url": "https://www.ptt.cc/bbs/marriage/index.html"
+  },
+  {
+    "name": "Boy-Girl",
+    "url": "https://www.ptt.cc/bbs/Boy-Girl/index.html"
+  },
+  {
+    "name": "SakaTalk",
+    "url": "https://www.ptt.cc/bbs/SakaTalk/index.html"
+  },
+  {
+    "name": "Guardians",
+    "url": "https://www.ptt.cc/bbs/Guardians/index.html"
+  },
+  {
+    "name": "give",
+    "url": "https://www.ptt.cc/bbs/give/index.html"
+  },
+  {
+    "name": "MLB",
+    "url": "https://www.ptt.cc/bbs/MLB/index.html"
+  },
+  {
+    "name": "Road_Running",
+    "url": "https://www.ptt.cc/bbs/Road_Running/index.html"
+  },
+  {
+    "name": "e-shopping",
+    "url": "https://www.ptt.cc/bbs/e-shopping/index.html"
+  },
+  {
+    "name": "Salary",
+    "url": "https://www.ptt.cc/bbs/Salary/index.html"
+  },
+  {
+    "name": "PuzzleDragon",
+    "url": "https://www.ptt.cc/bbs/PuzzleDragon/index.html"
+  },
+  {
+    "name": "fastfood",
+    "url": "https://www.ptt.cc/bbs/fastfood/index.html"
+  },
+  {
+    "name": "Hsinchu",
+    "url": "https://www.ptt.cc/bbs/Hsinchu/index.html"
+  },
+  {
+    "name": "marvel",
+    "url": "https://www.ptt.cc/bbs/marvel/index.html"
+  },
+  {
+    "name": "Teacher",
+    "url": "https://www.ptt.cc/bbs/Teacher/index.html"
+  },
+  {
+    "name": "YuanChuang",
+    "url": "https://www.ptt.cc/bbs/YuanChuang/index.html"
+  },
+  {
+    "name": "TypeMoon",
+    "url": "https://www.ptt.cc/bbs/TypeMoon/index.html"
+  },
+  {
+    "name": "KanColle",
+    "url": "https://www.ptt.cc/bbs/KanColle/index.html"
+  },
+  {
+    "name": "Hearthstone",
+    "url": "https://www.ptt.cc/bbs/Hearthstone/index.html"
+  },
+  {
+    "name": "YUGIOH",
+    "url": "https://www.ptt.cc/bbs/YUGIOH/index.html"
+  },
+  {
+    "name": "PokemonGO",
+    "url": "https://www.ptt.cc/bbs/PokemonGO/index.html"
+  },
+  {
+    "name": "AKB48",
+    "url": "https://www.ptt.cc/bbs/AKB48/index.html"
+  },
+  {
+    "name": "ChangHua",
+    "url": "https://www.ptt.cc/bbs/ChangHua/index.html"
+  },
+  {
+    "name": "nb-shopping",
+    "url": "https://www.ptt.cc/bbs/nb-shopping/index.html"
+  },
+  {
+    "name": "PathofExile",
+    "url": "https://www.ptt.cc/bbs/PathofExile/index.html"
+  },
+  {
+    "name": "FAPL",
+    "url": "https://www.ptt.cc/bbs/FAPL/index.html"
+  },
+  {
+    "name": "ALLPOST",
+    "url": "https://www.ptt.cc/bbs/ALLPOST/index.html"
+  },
+  {
+    "name": "joke",
+    "url": "https://www.ptt.cc/bbs/joke/index.html"
+  },
+  {
+    "name": "FATE_GO",
+    "url": "https://www.ptt.cc/bbs/FATE_GO/index.html"
+  },
+  {
+    "name": "Audiophile",
+    "url": "https://www.ptt.cc/bbs/Audiophile/index.html"
+  },
+  {
+    "name": "BikerShop",
+    "url": "https://www.ptt.cc/bbs/BikerShop/index.html"
+  },
+  {
+    "name": "Wanted",
+    "url": "https://www.ptt.cc/bbs/Wanted/index.html"
+  },
+  {
+    "name": "hypermall",
+    "url": "https://www.ptt.cc/bbs/hypermall/index.html"
+  },
+  {
+    "name": "HelpBuy",
+    "url": "https://www.ptt.cc/bbs/HelpBuy/index.html"
+  },
+  {
+    "name": "shoes",
+    "url": "https://www.ptt.cc/bbs/shoes/index.html"
+  },
+  {
+    "name": "Coffee",
+    "url": "https://www.ptt.cc/bbs/Coffee/index.html"
+  },
+  {
+    "name": "Food",
+    "url": "https://www.ptt.cc/bbs/Food/index.html"
+  },
+  {
+    "name": "ToS",
+    "url": "https://www.ptt.cc/bbs/ToS/index.html"
+  },
+  {
+    "name": "Railway",
+    "url": "https://www.ptt.cc/bbs/Railway/index.html"
+  },
+  {
+    "name": "Storage_Zone",
+    "url": "https://www.ptt.cc/bbs/Storage_Zone/index.html"
+  },
+  {
+    "name": "BigBanciao",
+    "url": "https://www.ptt.cc/bbs/BigBanciao/index.html"
+  },
+  {
+    "name": "Taoyuan",
+    "url": "https://www.ptt.cc/bbs/Taoyuan/index.html"
+  },
+  {
+    "name": "medstudent",
+    "url": "https://www.ptt.cc/bbs/medstudent/index.html"
+  },
+  {
+    "name": "Gov_owned",
+    "url": "https://www.ptt.cc/bbs/Gov_owned/index.html"
+  },
+  {
+    "name": "part-time",
+    "url": "https://www.ptt.cc/bbs/part-time/index.html"
+  },
+  {
+    "name": "DMM_GAMES",
+    "url": "https://www.ptt.cc/bbs/DMM_GAMES/index.html"
+  },
+  {
+    "name": "TW_Entertain",
+    "url": "https://www.ptt.cc/bbs/TW_Entertain/index.html"
+  },
+  {
+    "name": "Wuther-Waves",
+    "url": "https://www.ptt.cc/bbs/Wuther-Waves/index.html"
+  },
+  {
+    "name": "Digitalhome",
+    "url": "https://www.ptt.cc/bbs/Digitalhome/index.html"
+  },
+  {
+    "name": "DigiCurrency",
+    "url": "https://www.ptt.cc/bbs/DigiCurrency/index.html"
+  },
+  {
+    "name": "Vtuber",
+    "url": "https://www.ptt.cc/bbs/Vtuber/index.html"
+  },
+  {
+    "name": "E-appliance",
+    "url": "https://www.ptt.cc/bbs/E-appliance/index.html"
+  },
+  {
+    "name": "Spurs",
+    "url": "https://www.ptt.cc/bbs/Spurs/index.html"
+  },
+  {
+    "name": "LoveLive_Sip",
+    "url": "https://www.ptt.cc/bbs/LoveLive_Sip/index.html"
+  },
+  {
+    "name": "MRT",
+    "url": "https://www.ptt.cc/bbs/MRT/index.html"
+  },
+  {
+    "name": "Palmar_Drama",
+    "url": "https://www.ptt.cc/bbs/Palmar_Drama/index.html"
+  },
+  {
+    "name": "Tennis",
+    "url": "https://www.ptt.cc/bbs/Tennis/index.html"
+  },
+  {
+    "name": "BeautySalon",
+    "url": "https://www.ptt.cc/bbs/BeautySalon/index.html"
+  },
+  {
+    "name": "tabletennis",
+    "url": "https://www.ptt.cc/bbs/tabletennis/index.html"
+  }
+]
