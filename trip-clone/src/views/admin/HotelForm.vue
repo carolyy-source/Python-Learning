@@ -58,7 +58,10 @@ onMounted(async () => {
 
       // Set rooms
       if (data.rooms) {
-        rooms.value = data.rooms
+        rooms.value = data.rooms.map(r => ({
+          ...r,
+          selectedOptions: r.description ? r.description.split(', ') : []
+        }))
       }
     }
   } catch (e) {
@@ -128,15 +131,6 @@ const handleSubmit = async () => {
     if (deleteError) throw deleteError
 
     // Then insert new links
-    // 3. Update Facilities
-    // First delete all existing links for this hotel
-    const { error: deleteError } = await supabase
-      .from('hotel_facilities')
-      .delete()
-      .eq('hotel_id', hotelId)
-    if (deleteError) throw deleteError
-
-    // Then insert new links
     if (selectedFacilities.value.length > 0) {
       const facilityInserts = selectedFacilities.value.map(facilityId => ({
         hotel_id: hotelId,
@@ -164,7 +158,7 @@ const handleSubmit = async () => {
       const roomInserts = rooms.value.map(room => ({
         hotel_id: hotelId,
         name: room.name,
-        description: room.description,
+        description: room.selectedOptions ? room.selectedOptions.join(', ') : '',
         base_price: room.base_price,
         max_guests: room.max_guests,
         available_count: room.available_count
@@ -193,6 +187,7 @@ const addRoom = () => {
   rooms.value.push({
     name: '',
     description: '',
+    selectedOptions: [],
     base_price: 3000,
     max_guests: 2,
     available_count: 5
@@ -201,6 +196,11 @@ const addRoom = () => {
 const removeRoom = (index) => {
   rooms.value.splice(index, 1)
 }
+
+const roomOptions = [
+  '含早餐', '含晚餐', '山景', '海景', '市景',
+  '高樓層', '低樓層', '無對外窗', '無禁菸', '禁菸房'
+]
 </script>
 
 <template>
@@ -280,8 +280,21 @@ const removeRoom = (index) => {
             </div>
             
             <div class="md:col-span-2">
-              <label class="block text-xs font-medium text-gray-700">描述</label>
-              <input v-model="room.description" type="text" placeholder="例如：含早餐、海景" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm border p-2">
+              <label class="block text-xs font-medium text-gray-700 mb-2">房型描述 (可多選)</label>
+              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
+                <div v-for="option in roomOptions" :key="option" class="flex items-center">
+                  <input 
+                    type="checkbox" 
+                    :id="`room-${index}-${option}`" 
+                    :value="option" 
+                    v-model="room.selectedOptions"
+                    class="h-3 w-3 text-primary focus:ring-primary border-gray-300 rounded"
+                  >
+                  <label :for="`room-${index}-${option}`" class="ml-1 block text-xs text-gray-700 cursor-pointer">
+                    {{ option }}
+                  </label>
+                </div>
+              </div>
             </div>
 
             <div>

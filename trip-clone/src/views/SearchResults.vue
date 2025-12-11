@@ -126,7 +126,7 @@ onMounted(async () => {
                   :to="{ name: 'HotelDetails', params: { id: hotel.id } }"
                   class="bg-primary text-white px-6 py-2 rounded-md font-medium hover:bg-blue-600 transition-colors inline-block text-center"
                 >
-                  查看優惠
+                  查看空房情況
                 </router-link>
               </div>
             </div>
