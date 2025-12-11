@@ -11,7 +11,10 @@ const loading = ref(false)
 const form = ref({
   name: '',
   description: '',
+  name: '',
+  description: '',
   rating: 4.0,
+  star_rating: '三星級',
   image_url: '',
   street: '',
   city: '',
@@ -45,7 +48,10 @@ onMounted(async () => {
       form.value = {
         name: data.name,
         description: data.description,
+        name: data.name,
+        description: data.description,
         rating: data.rating,
+        star_rating: data.star_rating || '三星級',
         image_url: data.image_url,
         street: data.address[0]?.street || '',
         city: data.address[0]?.city || '',
@@ -81,7 +87,10 @@ const handleSubmit = async () => {
     const hotelData = {
       name: form.value.name,
       description: form.value.description,
+      name: form.value.name,
+      description: form.value.description,
       rating: form.value.rating,
+      star_rating: form.value.star_rating,
       image_url: form.value.image_url
     }
 
@@ -158,7 +167,9 @@ const handleSubmit = async () => {
       const roomInserts = rooms.value.map(room => ({
         hotel_id: hotelId,
         name: room.name,
+        name: room.name,
         description: room.selectedOptions ? room.selectedOptions.join(', ') : '',
+        image_url: room.image_url,
         base_price: room.base_price,
         max_guests: room.max_guests,
         available_count: room.available_count
@@ -187,7 +198,10 @@ const addRoom = () => {
   rooms.value.push({
     name: '',
     description: '',
+    name: '',
+    description: '',
     selectedOptions: [],
+    image_url: '',
     base_price: 3000,
     max_guests: 2,
     available_count: 5
@@ -227,6 +241,14 @@ const roomOptions = [
           <div>
             <label class="block text-sm font-medium text-gray-700">評分 (0-5)</label>
             <input v-model="form.rating" type="number" step="0.1" min="0" max="5" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm border p-2">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">星級</label>
+            <select v-model="form.star_rating" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm border p-2">
+              <option value="三星級">三星級</option>
+              <option value="四星級">四星級</option>
+              <option value="五星級">五星級</option>
+            </select>
           </div>
         </div>
 
@@ -295,6 +317,11 @@ const roomOptions = [
                   </label>
                 </div>
               </div>
+            </div>
+
+            <div class="md:col-span-2">
+              <label class="block text-xs font-medium text-gray-700">房間照片網址</label>
+              <input v-model="room.image_url" type="url" placeholder="https://..." class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm border p-2">
             </div>
 
             <div>
