@@ -100,6 +100,54 @@ const getStarCount = (ratingStr) => {
   };
   return map[ratingStr] || 0;
 };
+
+// Filters
+const availableFacilities = ref([]);
+const filters = ref({
+  maxPrice: 20000,
+  stars: [],
+  facilities: [],
+});
+
+const fetchFacilities = async () => {
+  const { data, error } = await supabase.from("facilities").select("*");
+  if (data) availableFacilities.value = data;
+};
+
+const filteredHotels = computed(() => {
+  console.log("Filtering...", filters.value);
+  const filtered = results.value.filter((hotel) => {
+    // Price Filter
+    const price = hotel.rooms[0]?.base_price || 0;
+    if (price > filters.value.maxPrice) return false;
+
+    // Star Filter
+    if (filters.value.stars.length > 0) {
+      const starCount = getStarCount(hotel.star_rating);
+      if (!filters.value.stars.includes(starCount)) return false;
+    }
+
+    // Facility Filter
+    if (filters.value.facilities.length > 0) {
+      const hotelFacilityIds = hotel.facilities.map((f) => f?.id);
+
+      const hasAll = filters.value.facilities.every((id) =>
+        hotelFacilityIds.includes(id)
+      );
+      console.log(`Hotel: ${hotel.name}, HasAll: ${hasAll}`);
+      if (!hasAll) return false;
+    }
+
+    return true;
+  });
+  console.log("Filtered count:", filtered.length);
+  return filtered;
+});
+
+onMounted(() => {
+  fetchHotels();
+  fetchFacilities();
+});
 </script>
 
 <template>
@@ -164,30 +212,84 @@ const getStarCount = (ratingStr) => {
         </div>
       </div>
 
-      <h1 class="text-2xl font-bold mb-6">共有 {{ results.length }} 個住宿</h1>
+      <h1 class="text-2xl font-bold mb-6">
+        共有 {{ filteredHotels.length }} 個住宿
+      </h1>
 
       <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
         <!-- Sidebar Filters -->
         <div class="lg:col-span-1">
-          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 sticky top-24"
+          >
             <h3 class="font-bold mb-4">篩選條件</h3>
-            <div class="space-y-4">
+            <div class="space-y-6">
+              <!-- Price Filter -->
               <div>
-                <h4 class="font-medium mb-2">價格範圍</h4>
-                <input type="range" class="w-full" />
+                <h4 class="font-medium mb-2">
+                  每晚價格 (TWD 0 - {{ filters.maxPrice }})
+                </h4>
+                <input
+                  v-model.number="filters.maxPrice"
+                  type="range"
+                  min="0"
+                  max="20000"
+                  step="500"
+                  class="w-full accent-primary"
+                />
               </div>
+
+              <!-- Star Filter -->
               <div>
                 <h4 class="font-medium mb-2">星級</h4>
                 <div class="space-y-2">
-                  <label class="flex items-center"
-                    ><input type="checkbox" class="mr-2" /> 5 星級</label
+                  <label class="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      v-model="filters.stars"
+                      :value="5"
+                      class="mr-2 rounded text-primary focus:ring-primary"
+                    />
+                    5 星級
+                  </label>
+                  <label class="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      v-model="filters.stars"
+                      :value="4"
+                      class="mr-2 rounded text-primary focus:ring-primary"
+                    />
+                    4 星級
+                  </label>
+                  <label class="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      v-model="filters.stars"
+                      :value="3"
+                      class="mr-2 rounded text-primary focus:ring-primary"
+                    />
+                    3 星級
+                  </label>
+                </div>
+              </div>
+
+              <!-- Facilities Filter -->
+              <div v-if="availableFacilities.length > 0">
+                <h4 class="font-medium mb-2">設施服務</h4>
+                <div class="space-y-2 max-h-60 overflow-y-auto pr-2">
+                  <label
+                    v-for="facility in availableFacilities"
+                    :key="facility.id"
+                    class="flex items-center cursor-pointer"
                   >
-                  <label class="flex items-center"
-                    ><input type="checkbox" class="mr-2" /> 4 星級</label
-                  >
-                  <label class="flex items-center"
-                    ><input type="checkbox" class="mr-2" /> 3 星級</label
-                  >
+                    <input
+                      type="checkbox"
+                      v-model="filters.facilities"
+                      :value="facility.id"
+                      class="mr-2 rounded text-primary focus:ring-primary"
+                    />
+                    {{ facility.name }}
+                  </label>
                 </div>
               </div>
             </div>
@@ -197,7 +299,7 @@ const getStarCount = (ratingStr) => {
         <!-- Results List -->
         <div class="lg:col-span-3 space-y-6">
           <div
-            v-for="hotel in results"
+            v-for="hotel in filteredHotels"
             :key="hotel.id"
             class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden flex flex-col sm:flex-row"
           >
